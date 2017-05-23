@@ -44,13 +44,15 @@ class Game {
         let pub = new Room("in the campus pub");
         let lab = new Room("in a computing lab");
         let office = new Room("in the computing admin office");
+        let Daan = new Room("In Daan's office");
 
         // initialise room exits
-        outside.setExits(null, theater, lab, pub);
-        theater.setExits(null, null, null, outside);
-        pub.setExits(null, outside, null, null);
-        lab.setExits(outside, office, null, null);
+        outside.setExits(null, pub, lab, theater);
+        theater.setExits(null, outside, Daan, null);
+        pub.setExits(null, null, null, outside);
+        lab.setExits(outside, office, null, Daan);
         office.setExits(null, null, null, lab);
+        Daan.setExits(theater, lab, null, null);
 
         // spawn player outside
         this.currentRoom = outside;
@@ -198,5 +200,9 @@ class Game {
         else {
             return true;  // signal that we want to quit
         }
+    }
+    look(params : string[]) : boolean {
+        this.out.println("You are " + this.currentRoom.description);
+        return false;
     }
 }

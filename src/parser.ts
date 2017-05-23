@@ -49,7 +49,7 @@ class Parser {
         switch (words[0]) {
             case "" :
                 // Do nothing when user enters nothing 
-                break
+                break;
             case "help" : 
                 wantToQuit = this.game.printHelp(params);
                 break;
@@ -58,6 +58,9 @@ class Parser {
                 break;
             case "quit" : 
                 wantToQuit = this.game.quit(params);
+                break;
+            case "look" :
+                wantToQuit = this.game.look(params);
                 break;
             default :
                 // print an error when command is not known
