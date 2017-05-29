@@ -9,8 +9,8 @@
  * The parser has a set of known command words. It checks user input against
  * the known commands, and invokes a relevant method on the Game object.
  * 
- * @author  Michael Kölling, David J. Barnes and Bugslayer
- * @version 2017.03.30
+ * @author  Michael Kölling, David J. Barnes, Bugslayer and kamo0002
+ * @version 2017.03.31
  */
 class Parser {
     input : HTMLInputElement;

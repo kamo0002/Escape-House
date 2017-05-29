@@ -9,8 +9,8 @@
  * east, south, west.  For each direction, the room stores a reference
  * to the neighboring room, or null if there is no exit in that direction.
  * 
- * @author  Michael Kölling, David J. Barnes and Bugslayer
- * @version 2017.03.30
+ * @author  Michael Kölling, David J. Barnes, Bugslayer and kamo0002
+ * @version 2017.03.31
  */
 class Room {
     description : string;

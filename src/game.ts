@@ -12,8 +12,8 @@
  * rooms, creates the parser and starts the game.  It also evaluates and
  * executes the commands that the parser returns.
  * 
- * @author  Michael Kölling, David J. Barnes and Bugslayer
- * @version 2017.03.30
+ * @author  Michael Kölling, David J. Barnes, Bugslayer and kamo0002
+ * @version 2017.03.31
  */
 class Game {
     parser : Parser;
@@ -63,8 +63,8 @@ class Game {
      */
     printWelcome() : void {
         this.out.println();
-        this.out.println("Welcome to the Zorld of Wuul!");
-        this.out.println("Zorld of Wuul is a new, incredibly boring adventure game.");
+        this.out.println("Welcome to Escape Room");
+        this.out.println("Escape Room is a new, incredibly boring adventure game.");
         this.out.println("Type 'help' if you need help.");
         this.out.println();
         this.out.println("You are " + this.currentRoom.description);

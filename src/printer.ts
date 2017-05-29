@@ -5,8 +5,8 @@
  * This printer makes adding text to the output HTMLElement more convenient
  * to the developer. It acts much like the System.out object in java
  * 
- * @author  Bugslayer
- * @version 2017.03.30
+ * @author  Bugslayer and kamo0002
+ * @version 2017.03.31
  */
 class Printer {
     output : HTMLElement;
