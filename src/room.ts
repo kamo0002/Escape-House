@@ -19,6 +19,8 @@ class Room {
     southExit : Room;
     eastExit : Room;
     westExit : Room;
+    upExit : Room;
+    downExit : Room;
 
     /**
      * Create a room described "description". Initially, it has
@@ -37,8 +39,10 @@ class Room {
      * @param east The east east.
      * @param south The south exit.
      * @param west The west exit.
+     * @param up The up exit.
+     * @param down The down exit.
      */
-    setExits(north : Room, east : Room, south : Room, west : Room) : void {
+    setExits(north : Room, east : Room, south : Room, west : Room, up : Room, down : Room) : void {
         if(north != null) {
             this.northExit = north;
         }
@@ -50,6 +54,12 @@ class Room {
         }
         if(west != null) {
             this.westExit = west;
+        }
+        if(up != null) {
+            this.upExit = up;
+        }
+        if(down != null) {
+            this.downExit = down;
         }
     }
 
