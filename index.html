@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Escape Room</title>
+		<title>Escape House</title>
 		<meta name="description" content="Escape Room">
 		<meta name="author" content="kamo0002">
 
@@ -37,7 +37,7 @@
             }
             
             #console_screen {
-                margin-top: 225px;
+                margin-top: 50px;
             }
 
             body {
@@ -46,13 +46,25 @@
                 background-attachment: fixed;
                 background-size: cover;
             }
+
+            #map {
+                width: 100%;
+                margin: auto;
+                display: block;
+                margin-top: 50px;
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 5px;
+                border-radius: 5px;
+            }
         </style>
 	</head>
 
 	<body>
         <div class="container">
-            <h1 class="display-3" id="banner">Escape Room</h1>
-                <p id="banner">Escape Room is een nieuw op tekst gebaseerd avonturen spel.</p>
+            <div>
+            <h1 class="display-3" id="banner">Escape House</h1>
+                <p id="banner">Escape House is een nieuw op tekst gebaseerd avonturen spel.</p>
+                <img id="map" src="plattegrond.png"/>
             <div class="panel panel-default" id="console_screen">
                 <div class="panel-heading"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></div>
                 <div id="game_console" class="panel-body console">

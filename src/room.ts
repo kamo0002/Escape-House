@@ -21,6 +21,8 @@ class Room {
     westExit : Room;
     upExit : Room;
     downExit : Room;
+    jumpExit : Room;
+    climbExit : Room;
 
     /**
      * Create a room described "description". Initially, it has
@@ -41,8 +43,10 @@ class Room {
      * @param west The west exit.
      * @param up The up exit.
      * @param down The down exit.
+     * @param jump The jump exit.
+     * @param climb The climb exit.
      */
-    setExits(north : Room, east : Room, south : Room, west : Room, up : Room, down : Room) : void {
+    setExits(north : Room, east : Room, south : Room, west : Room, up : Room, down : Room, jump : Room, climb : Room) : void {
         if(north != null) {
             this.northExit = north;
         }
@@ -60,6 +64,12 @@ class Room {
         }
         if(down != null) {
             this.downExit = down;
+        }
+        if(jump != null) {
+            this.jumpExit = jump;
+        }
+        if(climb != null) {
+            this.climbExit = climb;
         }
     }
 
