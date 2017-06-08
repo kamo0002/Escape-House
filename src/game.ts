@@ -59,8 +59,8 @@ class Game {
         let badkamer = new Room("in de 1ste badkamer op de 1ste verdieping.");
 
         let oprit2 = new Room("op de oprit van de 2de garage.");
-        let oprit = new Room("op de oprit van de 1ste garage.");
-        let garage2 = new Room("in de 2de garage op de begane grond.");
+        let oprit = new Room("op de oprit van de 1ste garage. Hier is helaas geen uitgang de hekken voor de oprit zijn op slot.");
+        let garage2 = new Room("in de 2de garage op de begane grond. Hier is helaas geen uitgang de hekken voor de oprit zijn op slot.");
         let garage = new Room("in de 1ste garage op de begane grond.");
         let garagetuinpad = new Room("op het tuinpad naar de garages.");
         let wc = new Room("In de wc op de begane grond.");
