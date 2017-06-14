@@ -65,9 +65,9 @@ var Game = (function () {
         var kledingkast = new Room("in de 1ste kledingkast op de 1ste verdieping.");
         var badkamer = new Room("in de 1ste badkamer op de 1ste verdieping.");
         var badkamerraam = new Room("bij het raam in de badkamer helaas is dit raam te klein om door heen te gaan.");
-        var oprit2 = new Room("op de oprit van de 2de garage.");
+        var oprit2 = new Room("op de oprit van de 2de garage. Hier is helaas geen uitgang de hekken voor de oprit zijn op slot.");
         var oprit = new Room("op de oprit van de 1ste garage. Hier is helaas geen uitgang de hekken voor de oprit zijn op slot.");
-        var garage2 = new Room("in de 2de garage op de begane grond. Hier is helaas geen uitgang de hekken voor de oprit zijn op slot.");
+        var garage2 = new Room("in de 2de garage op de begane grond.");
         var garage = new Room("in de 1ste garage op de begane grond.");
         var garagetuinpad = new Room("op het tuinpad naar de garages.");
         var wc = new Room("in de wc op de begane grond.");
@@ -196,8 +196,11 @@ var Game = (function () {
     Game.prototype.printWelcome = function () {
         this.out.println();
         this.out.println("Welkom bij Escape House");
-        this.out.println("Escape House is een nieuw op tekst gebaseerd avonturen spel");
-        this.out.println("Typ 'help' wanneer je hulp nodig hebt.");
+        this.out.println("Escape House is een nieuw op tekst gebaseerd avonturen spel.");
+        this.out.println("Je zit opgesloten in een huis en moet hieruit een uitweg vinden.");
+        this.out.println("Hierboven is daarom één grootdeel van de map weergegeven om je een beetje wegwijs te maken.");
+        this.out.println("Let op niet alles staat op de kaart dus je zult zelf nog op onderzoek moeten gaan.");
+        this.out.println("Typ 'help' wanneer je hulp nodig hebt of typ 'restart' om opnieuw te beginnen.");
         this.out.println();
         this.out.println("Je bent " + this.currentRoom.description);
         this.out.print("Exits: ");
