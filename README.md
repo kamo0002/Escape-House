@@ -1,5 +1,5 @@
 # Escape-House
-A Typescript port of the famous BlueJ project "The World of Zuul" by Michael Kölling and David J. Barnes
+A Typescript port of the famous BlueJ project "The World of Zuul" by Michael Kölling and David J. Barnes.
 
 Escape-House is a textbase adventure game in Dutch. Your trapped in a House and you need to Escape.
 
